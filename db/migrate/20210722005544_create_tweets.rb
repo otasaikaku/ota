@@ -8,8 +8,3 @@ class CreateTweets < ActiveRecord::Migration[6.1]
   end
 end
 
-class AddImageToTweets < ActiveRecord::Migration[6.0]
-  def change
-    add_column :tweets, :image, :string
-  end
-end
