@@ -22,7 +22,8 @@
   </div>
 
   <div class=“form-group”>
-            <%= f.select :car_lovers, [["Car_Lovers", "Car_Lovers"], ["Amatuer", "Amatuer"]], include_blank: "選択して下さい" %>
+    <%= f.label :car_lovers %>
+    <%= f.select :car_lovers, [["Car_Lovers", "Car_Lovers"], ["Amatuer", "Amatuer"]], include_blank: "選択して下さい" %>
   </div>
 
   <div class="actions">
