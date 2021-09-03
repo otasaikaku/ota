@@ -14,3 +14,6 @@ Tag.create([
     { name: 'ハイブリット・電気'},
     { name: 'モータースポーツカー'}
     ])
+
+    User.create(:car_lovers => 'Car_lovers')
+    User.create(:car_lovers => 'Amatuer')
