@@ -12,7 +12,8 @@ Tag.create([
     { name: '軽'},
     { name: 'ファミリーカー'},
     { name: 'ハイブリット・電気'},
-    { name: 'モータースポーツカー'}
+    { name: 'モータースポーツカー'},
+    { name: 'その他'}
     ])
 
     User.create(:car_lovers => 'Car_lovers')

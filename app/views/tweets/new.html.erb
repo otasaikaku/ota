@@ -1,29 +1,39 @@
-<%= stylesheet_link_tag 'new', :media => "all" %>
+<%= stylesheet_link_tag 'newtweet', :media => "all" %>
 
-<h1>GeekTwitter</h1>
-<h3>新規Tweet</h3>
+
+<div class="wrapper">
+  <h1>新規Tweet</h1>
+</div>
+
+<div class="index-tweet">
 <%= form_for @tweet do |f| %>
 
-  <div class="check_box">
-  <span>タグ</span>
-  <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
-   <div>
-     <%= tag.label do %>
-       <%= tag.check_box %>
-       <%= tag.text %>
-     <% end %>
-   </div>
- <% end %>
-</div>
-  <div class="field">
-   <%= f.label :title %>
-   <%= f.text_field :title, :size => 140 %>
+  <div class="wrapper1">
+    <h2>タイトル</h2>
+  </div>
+  <div class="field1">
+    <%= f.text_field :title, :size => 140 %>
   </div>
   
-  <div class="field">
-    <%= f.label :body %>
+  <div class="wrapper1">
+    <h2>ツイート内容</h2>
+  </div>
+  <div class="field1">
     <%= f.text_field :body, :size => 140 %>
   </div>
+
+  <div class="check_box">
+    <span>タグ</span>
+    <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %>
+    <div>
+      <%= tag.label do %>
+        <%= tag.check_box %>
+        <%= tag.text %>
+      <% end %>
+    </div>
+  <% end %>
+  </div>
+
 
   <div class="field">
     <%= f.label :image %>
@@ -36,3 +46,5 @@
 <% end %>
 <%= link_to "Tweet一覧に戻る", tweets_path %>
 
+
+</div>
