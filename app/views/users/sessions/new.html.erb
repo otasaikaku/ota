@@ -24,14 +24,12 @@
         <% if devise_mapping.rememberable? -%>
         <div class="field">
           <%= f.check_box :remember_me %>
-          <h3>パスワードの保存</h3>
+          <h5>パスワードの保存</h5>
         </div>
       <% end -%>
-      
         <div class="actions">
           <%= f.submit "Log in" %>
         </div>
-    </div> 
 <% end %>
 
 <%= render "users/shared/links" %>

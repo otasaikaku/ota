@@ -19,3 +19,84 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  #second-block {
+    background-image: url(https://www.wsupercars.com/wallpapers-regular/Lamborghini/2022-Lamborghini-Aventador-LP780-4-Ultimae-001-1080.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 0px;
+    color: white;
+    text-shadow:
+        1px 0 0 black,
+        1px 1px 0 black,
+        0 1px 0 black,
+        -1px 1px 0 black,
+        -1px 0 0 black,
+        -1px -1px 0 black,
+        0 -1px 0 black,
+        1px -1px 0 black;
+  }
+  
+  .title-container {
+    text-align: center;
+  }
+
+  #thrid-block {
+    background-color: #f0f0f0;
+  }
+  
+  a.animated-button.thar-one {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  a.animated-button.thar-one:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: none;
+  }
+  a.animated-button.thar-one:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+  }
+  a.animated-button.thar-one:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center
+  }
+
+  .info-text {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+  
+    width: 100%;
+  }
+  
+  .font-small {
+    font-size: 25px;
+  }
+

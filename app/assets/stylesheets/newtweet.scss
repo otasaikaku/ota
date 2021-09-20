@@ -5,11 +5,23 @@
     align-items: center;
     height: 100%;
     width: 1350px;
-    height: 150px;
+    height: 350px;
     text-align: center;
-    padding-top: 100px;
-    background: url(http://webcreatorbox.com/sample/images/sunset.jpg) no-repeat;
+    background: url(https://wallpapercave.com/wp/wp3253563.jpg) no-repeat;
     background-size: cover;
+    overflow: hidden;
+    position: relative;
+    background-position: 0px;
+    text-shadow:
+    1px 0 0 black,
+    1px 1px 0 black,
+    0 1px 0 black,
+    -1px 1px 0 black,
+    -1px 0 0 black,
+    -1px -1px 0 black,
+    0 -1px 0 black,
+    1px -1px 0 black;
+
   }
 
   h2 {
@@ -18,9 +30,45 @@
   }
 
   .field1 {
-    padding: 0;
+    padding:0px 0px 0px 0;
     background-color:#f4f9ff;/*背景色*/
     border:1px solid #84c1ff;/*枠線*/
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);/*影*/
     color:#000000;/*文字色*/
+}
+
+.wrapper2 {
+  background-color: #f0f0f0;
+}
+
+a.animated-button.thar-one {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid #F7CA18;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+a.animated-button.thar-one:hover {
+  color: #000 !important;
+  background-color: transparent;
+  text-shadow: none;
+}
+a.animated-button.thar-one:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
+a.animated-button.thar-one:before {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 0px;
+  width: 100%;
+  z-index: -1;
+  content: '';
+  color: #000 !important;
+  background: #F7CA18;
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
